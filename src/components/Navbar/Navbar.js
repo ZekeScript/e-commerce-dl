@@ -1,4 +1,4 @@
-const Navbar = ({ link }) => {
+const Navbar = () => {
   return <Navbar></Navbar>
 }
 
