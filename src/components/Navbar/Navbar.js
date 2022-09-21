@@ -1,6 +1,6 @@
 import './Navbar.css';
 import { FaHome } from 'react-icons/fa';
-import { FaShoppingBag } from 'react-icons/fa';
+import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = () => {
 	return (
@@ -45,7 +45,7 @@ const Navbar = () => {
 							CONTACT US
 						</a>
 						<a class="nav-link lne-animatiion active fs-5 ms-1" href="#">
-							<FaShoppingBag />
+							<CartWidget />
 						</a>
 					</div>
 				</article>

@@ -1,0 +1,5 @@
+.cart-widget:hover {
+	animation: cartWidget linear forwards;
+	transition: color 300ms linear;
+	color: #fdda00 !important;
+}
