@@ -22,24 +22,24 @@ const ItemCount = ({ stock }) => {
 	const handleOnAdd = () => console.log(`agragaste ${countCart} items al carrito`);
 
 	return (
-		<div class="container w-50 bg-cream p-2">
-			<div class="btn-group d-flex" role="group" aria-label="Default button group">
-				<div class="flex-grow-1">Sobre papel</div>
-				<div class="border rounded-3 border-1">
-					<button class="btn" type="button" onClick={decrement}>
+		<div className="container w-50 bg-cream p-2">
+			<div className="btn-group d-flex" role="group" aria-label="Default button group">
+				<div className="flex-grow-1">Sobre papel</div>
+				<div className="border rounded-3 border-1">
+					<button className="btn" type="button" onClick={decrement}>
 						-
 					</button>
-					<button class="btn pe-5 ps-5" onClick={reset}>
+					<button className="btn pe-5 ps-5" onClick={reset}>
 						{countCart}
 					</button>
-					<button class="btn" type="button" onClick={increment}>
+					<button className="btn" type="button" onClick={increment}>
 						+
 					</button>
 				</div>
 				<div>
 					<button
 						type="button"
-						class="btn btn-outline-primary ms-4"
+						className="btn btn-outline-primary ms-4"
 						onClick={handleOnAdd}
 					>
 						Agregar al carrito
