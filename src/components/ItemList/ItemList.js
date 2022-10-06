@@ -1,10 +1,15 @@
 const ItemList = ({ products }) => {
 	return (
-		<ul>
+		<div className="container d-flex flex-wrap">
 			{products.map((products) => (
-				<li key={products.id}>{products.name}</li>
+				<div className="card m-4" key={products.id}>
+					<div className="card-body">
+						<h5 className="card-title">{products.name}</h5>
+					</div>
+					<img src={products.thumbnail} className="card-img-bottom" alt="card-img-bottom" />
+				</div>
 			))}
-		</ul>
+		</div>
 	);
 };
 
