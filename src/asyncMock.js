@@ -39,7 +39,7 @@ const products = [
 		id: '4',
 		name: 'Latonas',
 		price: 1100,
-		category: 'limpieza',
+		category: 'bazar',
 		thumbnail:
 			'https://raw.githubusercontent.com/ezEst6/furry-carnival/products/src/assets/thumbnail/fuentones.png',
 		stock: 5,
@@ -182,7 +182,7 @@ const products = [
 ];
 
 export const getProducts = () => {
-	return new Promise((resolve, reject) => {
+	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(products);
 		}, 2000);
@@ -190,9 +190,17 @@ export const getProducts = () => {
 };
 
 export const getProduct = (id) => {
-	return new Promise((resolve, reject) => {
+	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(products.find((prod) => prod.id === id));
+		}, 2000);
+	});
+};
+
+export const getProductsByCategory = (categoryId) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(products.filter((prod) => prod.category === categoryId));
 		}, 2000);
 	});
 };

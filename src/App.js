@@ -1,9 +1,9 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
-import ItemCount from './components/ItemCount/ItemCount';
+// import ItemCount from './components/ItemCount/ItemCount';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<ItemListContainer greeting={'Welcome'} />} />
-					<Route path="/category" element={<ItemListContainer />} />
-					<Route path="/detail" element={<ItemDetailContainer />} />
+					<Route path="/category/:categoryID" element={<ItemListContainer />} />
+					<Route path="/detail/:productId" element={<ItemDetailContainer />} />
 				</Routes>
 			</BrowserRouter>
 			{/* <ItemCount stock={10} /> */}

@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { getProduct } from '../../asyncMock';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
 	const [product, setProduct] = useState({});
 	const [loading, setLoading] = useState(true);
+	const { productId } = useParams();
 
 	useEffect(() => {
-		getProduct('2')
+		getProduct(productId)
 			.then((res) => {
 				setProduct(res);
 			})
@@ -14,8 +16,6 @@ const ItemDetailContainer = () => {
 				setLoading(false);
 			});
 	}, []);
-	console.log(fetch(''));
-	console.log(product);
 
 	if (loading) {
 		return <h1>Loading...</h1>;
