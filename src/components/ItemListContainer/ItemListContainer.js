@@ -12,6 +12,7 @@ const ItemListContainer = ({ greeting }) => {
 	console.log(categoryId);
 
 	useEffect(() => {
+		setLoading(true);
 		if (!categoryId) {
 			getProducts()
 				.then((res) => {
