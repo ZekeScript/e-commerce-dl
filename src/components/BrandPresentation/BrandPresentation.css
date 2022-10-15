@@ -1,0 +1,80 @@
+.welcome {
+	margin-top: 6.5vh;
+	height: 66vh;
+	background: #18306d;
+}
+.sponge {
+	top: -70px;
+	left: -60px;
+	position: absolute;
+	width: 300px;
+	overflow-x: hidden;
+}
+.plasticbag {
+	width: 300px;
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	overflow-x: hidden;
+}
+.sponge img,
+.plasticbag img {
+	width: 100%;
+}
+.pizzabox {
+	grid-area: pizzabox;
+	max-width: 50vw;
+	justify-self: end;
+	align-self: center;
+}
+.welcome__center {
+	top: 27vh;
+	height: 40vh;
+	width: 100vw;
+	position: absolute;
+	display: grid;
+	grid-template-areas: 'presentation pizzabox';
+}
+.presentation {
+	grid-area: presentation;
+	justify-self: right;
+	align-self: center;
+}
+.welcome .display-1 {
+	font-weight: 1000;
+	color: var(--yellow-logo);
+}
+.welcome .display-6 {
+	font-weight: 500;
+	color: var(--background);
+}
+.socialmedia {
+	position: absolute;
+	display: flex;
+	right: 19vw;
+	bottom: 275px;
+}
+.socialmedia i {
+	font-size: 2rem;
+	margin-right: 0.6rem;
+	color: #d3b807;
+}
+.socialmedia i:hover {
+	color: var(--yellow-logo);
+	transition: 300ms;
+}
+.fixed_button {
+	float: right;
+	margin-right: 3vw;
+	position: sticky;
+	top: 86vh;
+	z-index: 1;
+}
+.fixed_button i {
+	color: #2b2b2b;
+	font-size: 4rem;
+}
+.fixed_button i:hover {
+	color: #25d366;
+	transition: 600ms;
+}

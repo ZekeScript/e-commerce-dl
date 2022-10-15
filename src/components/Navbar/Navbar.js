@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-md navbar-dark bground-dark">
+		<nav className="navbar navbar-expand-md navbar-dark bground-dark fixed-top">
 			<section className="container-fluid nav-wrapper justify-content-evenly">
 				<article className="navbar-wrapper-brand brand">
 					<Link to="/">
@@ -45,9 +45,9 @@ const Navbar = () => {
 						<Link to="/category/bazar" className="nav-link line-animation fs-5">
 							BAZAR
 						</Link>
-						<a className="nav-link">
+						<i className="nav-link">
 							<CartWidget />
-						</a>
+						</i>
 					</div>
 				</article>
 			</section>
