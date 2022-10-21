@@ -1,22 +1,45 @@
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({ product }) => {
-	console.log(`este es el producto ${product}`);
+	const [quantityToAdd, setQuantityToAdd] = useState(0);
+
+	const handleOnAdd = (quantity) => {
+		console.log(quantity);
+		setQuantityToAdd(quantity);
+	};
+
 	return (
-		<div className="container">
-			<h1>Detalle de producto</h1>
-			<div className="card m-4" key={product.id}>
-				<div className="card-body">
-					<h5 className="card-title">{product.name}</h5>
-					<p className="card-text">{product.description}</p>
+		<article className="container item-detail">
+			<div className="card">
+				<div className="row g-5">
+					<div className="col">
+						<img src={product.img} className="rounded-start" alt="product-img" />
+					</div>
+					<div className="col">
+						<div className="row">
+							<div className="card-body" key={product.id}>
+								<h2 className="card-title">{product.name}</h2>
+								<p className="card-text">{product.description}</p>
+								<p class="card-text text-center">
+									<small class="text-muted">Stock: {product.stock}</small>
+								</p>
+								<p className="card-text fs-1 text-center">${product.price}</p>
+							</div>
+						</div>
+						<div className="">
+							{quantityToAdd === 0 ? (
+								<ItemCount onConfirm={handleOnAdd} stock={product.stock} />
+							) : (
+								<Link to={'/cart'}>Finalizar compra</Link>
+							)}
+						</div>
+					</div>
 				</div>
-				<img src={product.img} className="card-img-bottom" alt="card-img-bottom" />
 			</div>
-			<div>
-				<ItemCount stock={5} />
-			</div>
-		</div>
+		</article>
 	);
 };
 

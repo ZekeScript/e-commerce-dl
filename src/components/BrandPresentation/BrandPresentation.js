@@ -16,7 +16,7 @@ const BrandPresentation = () => {
 					src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/rectangle-sponge.png"
 				/>
 			</article>
-			<article className="plasticbag" data-aos="fade-up-right" data-aos-duration="1000">
+			<article className="plasticbag" data-aos="fade-down" data-aos-duration="1500">
 				<img
 					className="img-fluid"
 					alt="pastic bag"

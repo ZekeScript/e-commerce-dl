@@ -1,0 +1,11 @@
+.card {
+	max-width: 66vw;
+}
+
+.card-body {
+	max-width: 33vw;
+}
+
+.item-detail {
+	margin: 15vh 0 15vh 0;
+}

@@ -1,6 +1,6 @@
 .welcome {
 	margin-top: 6.5vh;
-	height: 66vh;
+	height: 50vh;
 	background: #18306d;
 }
 .sponge {
@@ -14,7 +14,7 @@
 	width: 300px;
 	position: absolute;
 	top: -50px;
-	right: -50px;
+	right: 40vw;
 	overflow-x: hidden;
 }
 .sponge img,
@@ -28,7 +28,7 @@
 	align-self: center;
 }
 .welcome__center {
-	top: 27vh;
+	top: 10vh;
 	height: 40vh;
 	width: 100vw;
 	position: absolute;
@@ -52,7 +52,7 @@
 	position: absolute;
 	display: flex;
 	right: 19vw;
-	bottom: 275px;
+	top: 50vh;
 }
 .socialmedia i {
 	font-size: 2rem;

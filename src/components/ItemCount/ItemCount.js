@@ -22,9 +22,8 @@ const ItemCount = ({ stock }) => {
 	const handleOnAdd = () => console.log(`agragaste ${countCart} items al carrito`);
 
 	return (
-		<div className="container w-50 bg-cream p-2">
-			<div className="btn-group d-flex" role="group" aria-label="Default button group">
-				<div className="flex-grow-1">Sobre papel</div>
+		<div className="bg-cream p-2 mt-5 text-center">
+			<div className="btn-group" role="group" aria-label="Default button group">
 				<div className="border rounded-3 border-1">
 					<button className="btn" type="button" onClick={decrement}>
 						-
