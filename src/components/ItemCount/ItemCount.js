@@ -1,25 +1,24 @@
 import './ItemCount.css';
 import { useState } from 'react';
 
-const ItemCount = ({ stock }) => {
-	const [countCart, setCount] = useState(0);
+const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
+	const [quantity, setQuantity] = useState(initial);
 
 	const decrement = () => {
-		if (countCart > 0) {
-			setCount(countCart - 1);
+		if (quantity > 1) {
+			setQuantity(quantity - 1);
 		}
 	};
 
 	const increment = () => {
-		if (countCart < stock) {
-			setCount(countCart + 1);
+		if (quantity < stock) {
+			setQuantity(quantity + 1);
 		}
 	};
-	const reset = () => {
-		setCount(0);
-	};
 
-	const handleOnAdd = () => console.log(`agragaste ${countCart} items al carrito`);
+	const reset = () => {
+		setQuantity(0);
+	};
 
 	return (
 		<div className="bg-cream p-2 mt-5 text-center">
@@ -29,7 +28,7 @@ const ItemCount = ({ stock }) => {
 						-
 					</button>
 					<button className="btn pe-5 ps-5" onClick={reset}>
-						{countCart}
+						{quantity}
 					</button>
 					<button className="btn" type="button" onClick={increment}>
 						+
@@ -39,7 +38,7 @@ const ItemCount = ({ stock }) => {
 					<button
 						type="button"
 						className="btn btn-outline-primary ms-4"
-						onClick={handleOnAdd}
+						onClick={() => onAdd(quantity)}
 					>
 						Agregar al carrito
 					</button>

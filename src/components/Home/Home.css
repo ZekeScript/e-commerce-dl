@@ -1,0 +1,24 @@
+.brand__presentation {
+	margin-top: 10vh;
+}
+.brand__presentation article:first-child {
+	background: #fddb00a8 !important;
+}
+.brand__presentation .icon-square i {
+	font-size: 2em;
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Responsive query */
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}

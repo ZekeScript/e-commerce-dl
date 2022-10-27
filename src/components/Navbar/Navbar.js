@@ -1,5 +1,4 @@
 import './Navbar.css';
-import { FaHome } from 'react-icons/fa';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
 
@@ -36,14 +35,14 @@ const Navbar = () => {
 					id="navbarNavAltMarkup"
 				>
 					<div className="navbar-nav">
-						<Link to="/category/descartables" className="nav-link line-animation fs-5">
-							DESCARTABLES
+						<Link to="/quienes_somos" className="nav-link line-animation fs-5">
+							Quienes Somos
 						</Link>
-						<Link to="/category/limpieza" className="nav-link line-animation fs-5">
-							LIMPIEZA
+						<Link to="/products" className="nav-link line-animation fs-5">
+							Productos
 						</Link>
-						<Link to="/category/bazar" className="nav-link line-animation fs-5">
-							BAZAR
+						<Link to="/faqs" className="nav-link line-animation fs-5">
+							Faqs
 						</Link>
 						<i className="nav-link">
 							<CartWidget />

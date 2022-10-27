@@ -44,7 +44,13 @@ const ItemListContainer = ({ greeting }) => {
 	}, [categoryId]);
 
 	if (loading) {
-		return <h1>Loading...</h1>;
+		return (
+			<div class="d-flex justify-content-center">
+				<div class="spinner-border text-primary mt-5 mb-5" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</div>
+		);
 	}
 
 	if (error) {
