@@ -1,40 +1,31 @@
 import './Footer.css';
 import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<section className="footer__wrapper d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+			<section className="footer__wrapper d-flex flex-wrap justify-content-between align-items-center py-2">
 				<article className="footer__menu col-md-4 d-flex align-items-center">
-					<a
+					<Link
+						to="/quienes_somos"
 						className="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
-						href="/"
-						rel="noopener noreferrer"
 					>
 						Quienes somos
-					</a>
-					<a
+					</Link>
+					<Link
+						to="/products"
 						className="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
-						href="/"
-						rel="noopener noreferrer"
 					>
 						Productos
-					</a>
-					<a
+					</Link>
+					<Link
+						to="/faqs"
 						className="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
-						href="/"
-						rel="noopener noreferrer"
 					>
 						FAQS
-					</a>
-					<a
-						className="footer__link mb-3 me-2 mb-md-0 text-decoration-none lh-1"
-						href="/"
-						rel="noopener noreferrer"
-					>
-						Terminos y condiciones
-					</a>
+					</Link>
 				</article>
 				<ul className="footer__socialmedia nav col-md-4 justify-content-center list-unstyled d-flex col-6 offset-1">
 					<li className="socialmedia__facebook ms-3">
@@ -85,12 +76,15 @@ const Footer = () => {
 			</section>
 			<hr />
 			<section className="footer__mark">
-				<p>
-					<i className="fas fa-bolt"></i> by
-					<a href="https://github.com/ezEst6" target="_blank" rel="noreferrer">
-						@ezEst
-					</a>
-				</p>
+				by
+				<a
+					className="ms-1"
+					href="https://github.com/ezEst6"
+					target="_blank"
+					rel="noreferrer"
+				>
+					@ezEst
+				</a>
 			</section>
 		</footer>
 	);

@@ -1,11 +1,6 @@
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Context } from '../../App';
 
 const Item = ({ id, name, thumbnail, price }) => {
-	const value = useContext(Context);
-	console.log(value);
-
 	return (
 		<Link
 			to={`/detail/${id}`}

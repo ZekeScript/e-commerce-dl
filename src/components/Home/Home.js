@@ -1,4 +1,5 @@
 import './Home.css';
+import OurClients from '../OurClients/OurClients';
 
 const Home = () => {
 	return (
@@ -60,6 +61,7 @@ const Home = () => {
 					</div>
 				</div>
 			</article>
+			<OurClients />
 		</>
 	);
 };

@@ -1,21 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar.js';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import BrandPresentation from './components/BrandPresentation/BrandPresentation';
+import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import QuienesSomos from './components/AboutUs/AboutUs';
-import Faqs from './components/Faqs/Faqs';
 import Products from './components/Products/Products';
-import Home from './components/Home/Home';
-import BrandPresentation from './components/BrandPresentation/BrandPresentation';
-import { createContext } from 'react';
-
-export const Context = createContext();
+import Faqs from './components/Faqs/Faqs';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartContextProvider } from './context/CartContext';
 
 function App() {
 	return (
 		<div id="1" className="App">
-			<Context.Provider value={'valor a compartir'}>
+			<CartContextProvider>
 				<BrowserRouter>
 					<Navbar />
 					<BrandPresentation />
@@ -30,7 +28,7 @@ function App() {
 					</Routes>
 					<Footer />
 				</BrowserRouter>
-			</Context.Provider>
+			</CartContextProvider>
 		</div>
 	);
 }
