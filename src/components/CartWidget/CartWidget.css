@@ -1,5 +1,8 @@
-.cart-widget:hover {
-	animation: cartWidget linear forwards;
-	transition: color 300ms linear;
-	color: #fdda00 !important;
+.cartIcon {
+	font-size: 1.3rem;
+	color: #ced4da !important;
+}
+
+.badge-font {
+	font-size: 10px !important;
 }

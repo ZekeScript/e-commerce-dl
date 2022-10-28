@@ -1,3 +1,4 @@
+import './ItemListContainer.css';
 import { useEffect, useState } from 'react';
 import { getProducts } from '../../asyncMock';
 import ItemList from '../ItemList/ItemList';
@@ -43,7 +44,13 @@ const ItemListContainer = ({ greeting }) => {
 	}, [categoryId]);
 
 	if (loading) {
-		return <h1>Loading...</h1>;
+		return (
+			<div class="d-flex justify-content-center">
+				<div class="spinner-border text-primary mt-5 mb-5" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</div>
+		);
 	}
 
 	if (error) {
@@ -51,10 +58,12 @@ const ItemListContainer = ({ greeting }) => {
 	}
 
 	return (
-		<div className="p-5 mb-4 bg-light border rounded-3">
-			<h1>{greeting}</h1>
+		<div className="container p-5 mt-5">
 			<div>
-				<ItemList products={products} />
+				<h1>{greeting}</h1>
+				<div>
+					<ItemList products={products} />
+				</div>
 			</div>
 		</div>
 	);

@@ -1,10 +1,15 @@
 import './CartWidget.css';
-import { FaShoppingBag } from 'react-icons/fa';
+import { IoMdCart } from 'react-icons/io';
 
 const CartWidget = () => {
 	return (
 		<div className="cart-widget">
-			<FaShoppingBag /> 2
+			<div class="position-relative">
+				<IoMdCart className="cartIcon" />
+				<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-warning badge-font">
+					2<span class="visually-hidden">unread messages</span>
+				</span>
+			</div>
 		</div>
 	);
 };

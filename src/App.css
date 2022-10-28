@@ -9,20 +9,23 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-
+:root {
+	--yellow-logo: #fdda00;
+	--background-nav: #18306d;
+	--background: #fff;
+}
 body {
-	background: #fff;
+	background: var(--background);
 	color: #222831;
 	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
 }
-
 body,
 input,
 button {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
-
 button {
 	cursor: pointer;
 }
