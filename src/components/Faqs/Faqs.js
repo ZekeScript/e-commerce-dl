@@ -3,11 +3,11 @@ import './Faqs.css';
 const Faqs = () => {
 	return (
 		<>
-			<div class="faqs">
-				<section class="px-4 pt-5 my-5 text-center">
-					<h1 class="display-4 fw-bold">FAQS</h1>
-					<article class="col-lg-6 mx-auto">
-						<p class="lead mb-4">
+			<div className="faqs">
+				<section className="px-4 pt-5 my-5 text-center">
+					<h1 className="display-4 fw-bold">FAQS</h1>
+					<article className="col-lg-6 mx-auto">
+						<p className="lead mb-4">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus
 							quibusdam soluta? Dolores, laborum laboriosam molestiae deleniti asperiores
 							commodi. Nihil sint exercitationem dolores! Saepe officiis tempore quia, vel
@@ -16,11 +16,11 @@ const Faqs = () => {
 							officia quos laborum.
 						</p>
 					</article>
-					<article class="overflow-hidden faqs_img">
-						<div class="container px-5">
+					<article className="overflow-hidden faqs_img">
+						<div className="container px-5">
 							<img
 								src="https://raw.githubusercontent.com/estga/super-chainsaw/main/images/faqs.jpg"
-								class="img-fluid border rounded-3 shadow-lg mb-4"
+								className="img-fluid border rounded-3 shadow-lg mb-4"
 								alt="faq"
 								width="700"
 								height="500"
@@ -30,9 +30,9 @@ const Faqs = () => {
 					</article>
 				</section>
 
-				<section class="detail d-flex container-xxl">
+				<section className="detail d-flex container-xxl">
 					<article
-						class="bulto__abierto"
+						className="bulto__abierto"
 						data-aos="fade-right"
 						data-aos-duration="1500"
 						data-aos-anchor-placement="top-center"
@@ -69,7 +69,7 @@ const Faqs = () => {
 						</p>
 					</article>
 					<article
-						class="bulto__cerrado"
+						className="bulto__cerrado"
 						data-aos="fade-left"
 						data-aos-duration="1500"
 						data-aos-anchor-placement="top-center"
