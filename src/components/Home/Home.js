@@ -4,17 +4,17 @@ import OurClients from '../OurClients/OurClients';
 const Home = () => {
 	return (
 		<>
-			<article class="container px-4 py-5" id="hanging-icons">
-				<h2 class="pb-2 border-bottom">Servicio imbatible</h2>
-				<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			<article className="container px-4 py-5" id="hanging-icons">
+				<h2 className="pb-2 border-bottom">Servicio imbatible</h2>
+				<div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
 					<div
-						class="col d-flex align-items-start"
+						className="col d-flex align-items-start"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 						data-aos-delay="200"
 					>
-						<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-							<i class="fas fa-phone-volume"></i>
+						<div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+							<i className="fas fa-phone-volume"></i>
 						</div>
 						<div>
 							<h2>Atención personalizada</h2>
@@ -25,13 +25,13 @@ const Home = () => {
 						</div>
 					</div>
 					<div
-						class="col d-flex align-items-start"
+						className="col d-flex align-items-start"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 						data-aos-delay="700"
 					>
-						<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-							<i class="fas fa-dollar-sign"></i>
+						<div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+							<i className="fas fa-dollar-sign"></i>
 						</div>
 						<div>
 							<h2>Envío gratis</h2>
@@ -42,13 +42,13 @@ const Home = () => {
 						</div>
 					</div>
 					<div
-						class="col d-flex align-items-start"
+						className="col d-flex align-items-start"
 						data-aos="fade-up"
 						data-aos-duration="1000"
 						data-aos-delay="1200"
 					>
-						<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-							<i class="fas fa-truck"></i>
+						<div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+							<i className="fas fa-truck"></i>
 						</div>
 						<div>
 							<h2>Envío al interior</h2>

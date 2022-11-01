@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<section className="footer__wrapper d-flex flex-wrap justify-content-between align-items-center py-2">
+			<section className="container footer__wrapper d-flex flex-wrap justify-content-between align-items-center py-2">
 				<article className="footer__menu col-md-4 d-flex align-items-center">
 					<Link
 						to="/quienes_somos"

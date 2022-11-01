@@ -21,7 +21,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 	};
 
 	return (
-		<div className="bg-cream p-2 mt-5 text-center">
+		<div className="p-2 mt-5 text-center">
 			<div className="btn-group" role="group" aria-label="Default button group">
 				<div className="border rounded-3 border-1">
 					<button className="btn" type="button" onClick={decrement}>

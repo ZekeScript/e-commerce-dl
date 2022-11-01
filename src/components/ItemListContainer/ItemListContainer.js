@@ -45,9 +45,9 @@ const ItemListContainer = ({ greeting }) => {
 
 	if (loading) {
 		return (
-			<div class="d-flex justify-content-center">
-				<div class="spinner-border text-primary mt-5 mb-5" role="status">
-					<span class="visually-hidden">Loading...</span>
+			<div className="d-flex justify-content-center mt-5 mb-5">
+				<div className="spinner-border text-primary mt-5 mb-5" role="status">
+					<span className="visually-hidden mt-5 mb-5">Loading...</span>
 				</div>
 			</div>
 		);

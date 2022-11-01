@@ -1,8 +1,28 @@
 .cartIcon {
 	font-size: 1.3rem;
-	color: #ced4da !important;
 }
 
 .badge-font {
 	font-size: 10px !important;
+	color: #222831 !important;
+}
+
+.bg-yellow {
+	background-color: #fdda00 !important;
+  color: #222831 !important;
+}
+
+.btn-outline-warning {
+  --bs-btn-font-weight: 600 !important;
+  --bs-btn-color: #ced4da !important;
+  --bs-btn-bg: var(--bd-violet) !important;
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-border-radius: .5rem !important;
+  --bs-btn-hover-color: #f8f9fa !important;
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)} !important;
+  --bs-btn-hover-border-color: #fdda00 !important;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb) !important;
+  --bs-btn-active-color: var(--bs-btn-hover-color) !important;
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)} !important;
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)} !important;
 }
