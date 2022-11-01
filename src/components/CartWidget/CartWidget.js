@@ -11,10 +11,12 @@ const CartWidget = () => {
 		<div className="cart-widget cart">
 			<Link to="/cart" className="btn btn-outline-warning position-relative">
 				<IoMdCart className="cartIcon" />
-				<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-yellow">
-					{totalQuantity}
-					<span className="visually-hidden">unread messages</span>
-				</span>
+				{totalQuantity > 0 && (
+					<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-yellow">
+						{totalQuantity}
+						<span className="visually-hidden">cart items</span>
+					</span>
+				)}
 			</Link>
 		</div>
 	);

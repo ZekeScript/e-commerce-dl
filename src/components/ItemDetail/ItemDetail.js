@@ -46,7 +46,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 								<ItemCount onAdd={handleOnAdd} stock={stock} />
 							) : (
 								<Link to={'/cart'}>
-									<div className="bg-cream p-2 mt-5 text-center">
+									<div className="p-2 mt-5 text-center">
 										<div
 											className="btn-group"
 											role="group"

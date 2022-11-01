@@ -21,7 +21,7 @@
 	box-shadow: 0px 33px 25px rgba(0, 0, 0, 0.2);
 }
 .navbar .nav-wrapper .brand img:hover {
-	animation: navbarLogo 350ms linear forwards;
+	animation: navbarLogo 300ms linear forwards;
 }
 
 @keyframes navbarLogo {
@@ -29,25 +29,22 @@
 		transform: scale(1);
 	}
 	100% {
-		transform: scale(1.25);
+		transform: scale(1.2);
 	}
 }
 .navbar .nav-wrapper .navbar-wrapper-toggle {
 	align-self: baseline;
-  
 }
 .navbar .nav-wrapper .navbar-collapse {
 	justify-content: right;
-  
 }
 .navbar .nav-wrapper .navbar-collapse .navbar-nav {
 	display: flex;
 	align-items: center;
-  
 }
 .navbar .nav-wrapper .navbar-collapse .navbar-nav .line-animation {
 	position: relative;
-  color: #ced4da !important;
+	color: #ced4da !important;
 }
 .navbar .nav-wrapper .navbar-collapse .navbar-nav .line-animation:hover {
 	animation: navbarMenu linear forwards;

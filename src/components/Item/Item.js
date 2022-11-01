@@ -1,3 +1,4 @@
+import './Item.css';
 import { Link } from 'react-router-dom';
 
 const Item = ({ id, name, thumbnail, price }) => {
@@ -10,7 +11,7 @@ const Item = ({ id, name, thumbnail, price }) => {
 			<img src={thumbnail} className="card-img-top" alt="card-img-bottom" />
 			<div className="card-body">
 				<h5 className="card-title">{name}</h5>
-				<p className="card-text fs-5">{price}</p>
+				<p className="card-text fs-5">${price}</p>
 			</div>
 		</Link>
 	);
