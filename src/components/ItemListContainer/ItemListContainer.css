@@ -1,3 +1,7 @@
 .item-list-container {
 	margin-top: 500px;
 }
+
+.loading {
+	height: 33vh;
+}

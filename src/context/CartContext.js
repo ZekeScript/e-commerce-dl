@@ -59,7 +59,7 @@ export const CartContextProvider = ({ children }) => {
 	};
 
 	const getProductQuantity = (id) => {
-		const product = cart.find((prod) => prod === id);
+		const product = cart.find((prod) => prod.id === id);
 
 		return product?.quantity;
 	};

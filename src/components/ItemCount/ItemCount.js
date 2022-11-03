@@ -16,9 +16,6 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 		}
 	};
 
-	const reset = () => {
-		setQuantity(0);
-	};
 
 	return (
 		<div className="p-2 mt-5 text-center">
@@ -27,9 +24,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 					<button className="btn" type="button" onClick={decrement}>
 						-
 					</button>
-					<button className="btn pe-5 ps-5" onClick={reset}>
-						{quantity}
-					</button>
+					<button className="btn pe-5 ps-5">{quantity}</button>
 					<button className="btn" type="button" onClick={increment}>
 						+
 					</button>

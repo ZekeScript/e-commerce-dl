@@ -6,8 +6,7 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => {
 	const [quantityToAdd, setQuantityToAdd] = useState(0);
-
-	const { addItem } = useContext(CartContext);
+	const { addItem, getProductQuantity } = useContext(CartContext);
 
 	const handleOnAdd = (quantity) => {
 		setQuantityToAdd(quantity);
@@ -22,6 +21,9 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 
 		addItem(productToAdd);
 	};
+
+	const productAddedQuantity = getProductQuantity(id);
+	console.log(productAddedQuantity);
 
 	return (
 		<article className="container item-detail">
@@ -43,9 +45,13 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 						</div>
 						<div className="">
 							{quantityToAdd === 0 ? (
-								<ItemCount onAdd={handleOnAdd} stock={stock} />
+								<ItemCount
+									onAdd={handleOnAdd}
+									stock={stock}
+									initial={productAddedQuantity}
+								/>
 							) : (
-								<Link to={'/cart'}>
+								<div>
 									<div className="p-2 mt-5 text-center">
 										<div
 											className="btn-group"
@@ -53,13 +59,17 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 											aria-label="Default button group"
 										>
 											<div>
-												<button type="button" className="btn btn-outline-primary">
-													Finalizar compra
-												</button>
+												<Link
+													to={'/cart'}
+													type="button"
+													className="btn btn-outline-primary"
+												>
+													Ir al carrito
+												</Link>
 											</div>
 										</div>
 									</div>
-								</Link>
+								</div>
 							)}
 						</div>
 					</div>
