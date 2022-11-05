@@ -1,8 +1,8 @@
 import './App.css';
-import Navbar from './pages/Navbar/Navbar';
-import BrandPresentation from './pages/BrandPresentation/BrandPresentation';
+import Navbar from './layouts/Navbar/Navbar';
+import BrandPresentation from './layouts/BrandPresentation/BrandPresentation';
 import Home from './pages/Home/Home';
-import Footer from './pages/Footer/Footer';
+import Footer from './layouts/Footer/Footer';
 import QuienesSomos from './pages/AboutUs/AboutUs';
 import Products from './pages/Products/Products';
 import Faqs from './pages/Faqs/Faqs';
