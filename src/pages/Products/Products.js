@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
 
 const Products = () => {
 	return (

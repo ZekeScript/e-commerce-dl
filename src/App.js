@@ -1,11 +1,11 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar.js';
-import BrandPresentation from './components/BrandPresentation/BrandPresentation';
-import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer';
-import QuienesSomos from './components/AboutUs/AboutUs';
-import Products from './components/Products/Products';
-import Faqs from './components/Faqs/Faqs';
+import Navbar from './pages/Navbar/Navbar';
+import BrandPresentation from './pages/BrandPresentation/BrandPresentation';
+import Home from './pages/Home/Home';
+import Footer from './pages/Footer/Footer';
+import QuienesSomos from './pages/AboutUs/AboutUs';
+import Products from './pages/Products/Products';
+import Faqs from './pages/Faqs/Faqs';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartContextProvider } from './context/CartContext';

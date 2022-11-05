@@ -1,9 +1,8 @@
 import './ItemListContainer.css';
 import { useEffect, useState } from 'react';
-import { getProducts } from '../../asyncMock';
+import { getProducts, getProductsByCategory } from '../../data/asyncMock';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
-import { getProductsByCategory } from '../../asyncMock';
 
 const ItemListContainer = ({ greeting }) => {
 	const [products, setProducts] = useState([]);
