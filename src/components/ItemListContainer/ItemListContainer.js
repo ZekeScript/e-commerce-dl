@@ -10,7 +10,6 @@ const ItemListContainer = ({ greeting }) => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(false);
 	const { categoryId } = useParams();
-	console.log(categoryId);
 
 	useEffect(() => {
 		setLoading(true);
@@ -20,8 +19,6 @@ const ItemListContainer = ({ greeting }) => {
 			: collection(db, 'products');
 		getDocs(collectionRef)
 			.then((res) => {
-				console.log(res);
-
 				const productsAdapted = res.docs.map((doc) => {
 					const data = doc.data();
 					return { id: doc.id, ...data };
@@ -46,9 +43,9 @@ const ItemListContainer = ({ greeting }) => {
 				</div>
 			</div>
 		);
-  }
-  
-  if (error) {
+	}
+
+	if (error) {
 		return <h1>Hubo un error</h1>;
 	}
 
