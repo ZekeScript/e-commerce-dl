@@ -42,6 +42,11 @@ const Cart = () => {
 				))}
 			</div>
 			<p className="display-4 text-center mt-5 mb-5">Total: ${total}</p>
+			<div className="text-center mb-5">
+				<Link to="/checkout" className="btn btn-outline-primary">
+					Checkout
+				</Link>
+			</div>
 		</div>
 	);
 };
