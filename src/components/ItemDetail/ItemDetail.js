@@ -1,13 +1,17 @@
 import './ItemDetail.css';
-import ItemCount from '../ItemCount/ItemCount';
+import ItemQuantitySelector from './ItemQuantitySelector/ItemQuantitySelector';
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
+import { ToastContainer, toast } from 'react-toastify';
 
 const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => {
 	const [quantityToAdd, setQuantityToAdd] = useState(0);
 	const { addItem, getProductQuantity } = useContext(CartContext);
 
+	const notifyProductAdded = () => {
+		toast.success('Se agregaron productos al carrito!');
+	};
 	const handleOnAdd = (quantity) => {
 		setQuantityToAdd(quantity);
 
@@ -20,6 +24,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 		};
 
 		addItem(productToAdd);
+		notifyProductAdded();
 	};
 
 	const productAddedQuantity = getProductQuantity(id);
@@ -32,7 +37,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 					<div className="col">
 						<img src={img} className="rounded-start" alt="product-img" />
 					</div>
-					<div className="col">
+					<div className="col pe-5">
 						<div className="row">
 							<div className="card-body" key={id}>
 								<h2 className="card-title">{name}</h2>
@@ -45,7 +50,7 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 						</div>
 						<div className="">
 							{quantityToAdd === 0 ? (
-								<ItemCount
+								<ItemQuantitySelector
 									onAdd={handleOnAdd}
 									stock={stock}
 									initial={productAddedQuantity}
@@ -72,6 +77,18 @@ const ItemDetail = ({ id, name, img, description, price, stock, thumbnail }) => 
 								</div>
 							)}
 						</div>
+						<ToastContainer
+							position="top-right"
+							autoClose={2000}
+							hideProgressBar={true}
+							newestOnTop={false}
+							closeOnClick
+							rtl={false}
+							pauseOnFocusLoss
+							draggable
+							pauseOnHover
+							theme="light"
+						/>
 					</div>
 				</div>
 			</div>

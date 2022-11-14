@@ -1,7 +1,7 @@
-import './ItemCount.css';
+import './ItemQuantitySelector.css';
 import { useState } from 'react';
 
-const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
+const ItemQuantitySelector = ({ stock = 0, initial = 1, onAdd }) => {
 	const [quantity, setQuantity] = useState(initial);
 
 	const decrement = () => {
@@ -16,15 +16,14 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 		}
 	};
 
-
 	return (
 		<div className="p-2 mt-5 text-center">
-			<div className="btn-group" role="group" aria-label="Default button group">
-				<div className="border rounded-3 border-1">
+			<div className="d-flex justify-content-around" role="group" aria-label="Default button group">
+				<div className="border rounded-3 border-1 flex-grow-1 d-flex justify-content-around me-3">
 					<button className="btn" type="button" onClick={decrement}>
 						-
 					</button>
-					<button className="btn pe-5 ps-5">{quantity}</button>
+					<button className="btn">{quantity}</button>
 					<button className="btn" type="button" onClick={increment}>
 						+
 					</button>
@@ -32,7 +31,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 				<div>
 					<button
 						type="button"
-						className="btn btn-outline-primary ms-4"
+						className="btn btn-outline-primary"
 						onClick={() => onAdd(quantity)}
 					>
 						Agregar al carrito
@@ -43,4 +42,4 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
 	);
 };
 
-export default ItemCount;
+export default ItemQuantitySelector;
