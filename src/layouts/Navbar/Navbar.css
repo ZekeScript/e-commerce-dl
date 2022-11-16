@@ -12,6 +12,7 @@
 @media (max-width: 992px) {
 	.navbar .nav-wrapper {
 		padding-inline: 10vw;
+    justify-content: space-between !important;
 	}
 }
 .navbar .nav-wrapper .brand {

@@ -17,7 +17,7 @@ const Navbar = () => {
 						/>
 					</Link>
 				</article>
-				<article className="navbar-wrapper-toggle">
+				<article className="navbar-wrapper-toggle d-flex align-self-center">
 					<button
 						className="navbar-toggler"
 						type="button"

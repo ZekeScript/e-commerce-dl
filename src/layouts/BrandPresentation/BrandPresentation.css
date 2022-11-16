@@ -24,6 +24,7 @@
 .pizzabox {
 	grid-area: pizzabox;
 	max-width: 50vw;
+	max-height: 50vh;
 	justify-self: end;
 	align-self: center;
 }
@@ -39,6 +40,7 @@
 	grid-area: presentation;
 	justify-self: right;
 	align-self: center;
+	padding: 0 4vw;
 }
 .welcome .display-1 {
 	font-weight: 1000;
@@ -77,4 +79,47 @@
 .fixed_button i:hover {
 	color: #25d366;
 	transition: 600ms;
+}
+
+/* Responsive query */
+@media all and (max-width: 576px) {
+	.welcome__center {
+		grid-template-areas: 'presentation presentation';
+	}
+	.presentation {
+		justify-self: center;
+	}
+	.sponge {
+		top: 10px;
+		width: 200px;
+	}
+	.plasticbag {
+		right: 0px;
+		top: 10px;
+		width: 200px;
+	}
+	.pizzabox {
+		display: none;
+	}
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+	.welcome__center {
+		grid-template-areas: 'presentation presentation';
+	}
+	.presentation {
+		justify-self: center;
+	}
+	.pizzabox {
+		display: none;
+	}
+  	.sponge {
+		top: 10px;
+		width: 200px;
+	}
+	.plasticbag {
+		right: 0px;
+		top: 10px;
+		width: 200px;
+	}
+
 }

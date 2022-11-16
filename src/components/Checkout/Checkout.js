@@ -37,8 +37,9 @@ const Checkout = () => {
 		setFormAddress(e.target.value);
 	};
 
-	const notifySuccessBuy = () => {
+	const notifySuccessBuy = (id) => {
 		toast.success('Su compra fue exitosa!');
+		toast.success(`id de la compra ${id}`);
 	};
 
 	const createOrder = async () => {
@@ -85,7 +86,7 @@ const Checkout = () => {
 				const orderRef = collection(db, 'orders');
 				const orderAdded = await addDoc(orderRef, objOrder);
 
-				console.log(`El id de su orden es: ${orderAdded.id}`);
+				notifySuccessBuy(orderAdded.id);
 				clearCart();
 			} else {
 				console.log('hay productos fuera de stock');
@@ -95,8 +96,6 @@ const Checkout = () => {
 			console.log(error);
 		} finally {
 			setLoading(false);
-      notifySuccessBuy();
-      
 		}
 	};
 
@@ -212,7 +211,7 @@ const Checkout = () => {
 					</form>
 					<ToastContainer
 						position="top-right"
-						autoClose={2000}
+						autoClose={10000}
 						hideProgressBar={true}
 						newestOnTop={false}
 						closeOnClick
