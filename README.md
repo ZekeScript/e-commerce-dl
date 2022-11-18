@@ -26,12 +26,6 @@ DL (Distribuidora Luicho) is a web e-commerce app for people how want to buy the
 
 #### Home
 
-#### Currency Converter
-
-#### Query By Date
-
-#### Historical charts
-
 ## Demo
 
 ## Deployment
