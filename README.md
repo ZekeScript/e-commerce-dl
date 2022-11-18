@@ -1,6 +1,6 @@
 # [DL](https://github.com/ezEst6/furry-carnival)
 
-DL (Distribuidora Luicho) is a e-commerce app for people how want to buy their products.
+DL (Distribuidora Luicho) is an e-commerce app for people how want to buy their products.
 
 ## Tech Stack
 
