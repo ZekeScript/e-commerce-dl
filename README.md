@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# [DL](https://github.com/ezEst6/furry-carnival)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DL (Distribuidora Luicho) is a web e-commerce app for people how want to buy their products.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+**Client:** React, Bootstrap
 
-### `npm start`
+**Dependencies:** fontawesome, aos, bootstrap, firebase, react, react-icons, react-router-dom, react-toastify
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Server:** Firebase
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Landing
+- Products catalogue
+- Category filter
+- Products detail
+- Select quantity to add into a cart
+- Persistent cart
+- Checkout
+- Purchase order generator
+- Stock check
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+#### Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Currency Converter
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Query By Date
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Historical charts
 
-### `npm run eject`
+## Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Deploy](https://furry-carnival-cc1po82gt-ezest6.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Badges
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Stars](https://img.shields.io/github/stars/ezEst6/furry-carnival?style=social)
 
-## Learn More
+![Issues](https://img.shields.io/github/issues-raw/ezEst6/furry-carnival?style=social)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Repo size](https://img.shields.io/github/repo-size/ezEst6/furry-carnival)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Things I learned
 
-### Code Splitting
+- I started learn React with this project. So, everithing was new, I spend a lot of hours reading the documentation for the develop of every new feature.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- But the biggest obstacule I have was the BaaS in Firebase. It was a new world for me. Right now I don't understand how it this service works with none errors in my program, fortunately.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [@ezEst](https://github.com/ezEst6)
 
-### Making a Progressive Web App
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you have any feedback, please reach out to me at estiga27@gmail.com
 
-### Advanced Configuration
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Sebastian Zuviria](https://github.com/sebazio)
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
